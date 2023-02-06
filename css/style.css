@@ -142,5 +142,36 @@ section img{
 
 /* sectio 4 */
 
+.last-card{
+    align-items: flex-start;
+    
+    max-width: 90%;
+    padding:20px;
+    margin: auto;
+    border-radius: 20px;
+    background-color:white;
+    
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2rem;
+    color: #9593e6;
+    
+}
 
+.last-card p{
+    color: black;
+}
+.last-card h2{
+    font-size: xx-large;
+}
 
+.btn-tertiary{
+    color: white;
+    background-color: #9593e6;
+    padding:  8px 35px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* section 5 */
