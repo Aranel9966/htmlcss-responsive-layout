@@ -19,11 +19,14 @@ nav{
 }
 /* start main */
 
-.container{
+.container,.container-2{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 30px 0;
 }
+
+/* section 1 */
 
 .container .card:first-child {
     padding: 0 20px;
@@ -40,7 +43,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .card-text{
@@ -60,6 +63,42 @@ nav{
     font-size: 5rem;
 }
 
-.card h2,.card i{
+.card h3,.card i{
     color:#0084fd ;
 }
+/* section 2 */
+
+.container-2{
+    color: white;
+    background-color: #9593e6;
+}
+
+section{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section img{
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.container-2 .card {
+
+    background-color: white;
+}
+.container-2 .card i{
+    font-size: medium;
+    color: black;
+    border-radius: 50%;
+    background-color: #9593e6;
+    padding: 1rem;
+}
+
+.container-2 .card h3,.container-2 .card p{
+    color: black;
+}
+
