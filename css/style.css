@@ -17,6 +17,13 @@ nav{
 .menu ul{
     display: none;
 }
+
+.btn-primary{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
 /* start main */
 
 .container,.container-2{
@@ -50,7 +57,7 @@ nav{
 .card-text{
     display: flex;
     flex-direction: column;
-    /* align-items: start; */
+    align-items: flex-start;
     gap: 2rem;
     padding-top: 30px;
 
@@ -66,6 +73,15 @@ nav{
 
 .card h3,.card>i{
     color:#0084fd ;
+}
+
+.btn-secondary{
+    background-color: #0084fd;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+
 }
 /* section 2 */
 
@@ -116,25 +132,36 @@ section img{
     color:#9593e6 ;
 }
 
-.purple{
+.card-purple{
+    max-width: 90%;
+    padding:20px;
+    margin: auto;
+    border-radius: 20px;
+    background-color:#b5ddff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     background-color: #9593e6;
     color: white;
     text-align: center;
 }
-.purple h3{
+.card-purple h3{
     background-color: #9593e6;
     color: white;
 }
 
 .img-radio{
     display: inline-block;
-    /* position: relative; */
+    position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
 }
 .img-radio img{
+    
     margin-left: -45px;
     max-width: 150%;
     height: 100%;
@@ -177,6 +204,15 @@ section img{
 }
 
 /* section 5 */
+
+.last-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;     
+}
+
 .last img{
     margin-left: 0px;
     max-width: 150%;
@@ -216,4 +252,74 @@ footer{
 }
 footer p{
     padding: 30px;
+}
+
+
+
+
+
+
+/* ---------responsive-------- */
+
+@media screen and (min-width:768px) {
+
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card>img{
+        width:50%;
+        
+    }
+    
+    .container .card:first-child {
+        max-width: calc(100% / 3 * 2 - 20px);
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    .container .card{
+        max-width: calc(100% / 3 - 20px);
+        margin: 0;
+        min-height: 494px;
+        
+    }
+
+    .card-purple{
+        flex-direction: row;
+    }
+    .img-radio{
+        min-width:200px;
+    }
+
+
+
+    .container-2>h2{
+        flex-direction: column;
+    }
+    .container-2{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .last-card{
+        flex-wrap: wrap;
+        max-width: calc(100% / 3 - 20px);
+        margin: 0;
+    }
+
+
+    .last-container{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .text-container-2 p{
+        line-height: 3;
+        width: 70%;
+        padding: 30px;
+    }
+    .text-container-2 h3{
+        
+        width: 70%;
+        padding: 30px;
+    }
 }
