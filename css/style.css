@@ -49,7 +49,7 @@ nav{
 .card-text{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    /* align-items: start; */
     gap: 2rem;
     padding-top: 30px;
 
@@ -59,11 +59,11 @@ nav{
     max-width:90% ;
 }
 
-.card i{
+.card>i{
     font-size: 5rem;
 }
 
-.card h3,.card i{
+.card h3,.card>i{
     color:#0084fd ;
 }
 /* section 2 */
@@ -101,4 +101,46 @@ section img{
 .container-2 .card h3,.container-2 .card p{
     color: black;
 }
+
+
+ /* section 3 */
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.text-container h2{
+    color:#9593e6 ;
+}
+
+.purple{
+    background-color: #9593e6;
+    color: white;
+    text-align: center;
+}
+.purple h3{
+    background-color: #9593e6;
+    color: white;
+}
+
+.img-radio{
+    display: inline-block;
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.img-radio img{
+    margin-left: -45px;
+    max-width: 150%;
+    height: 100%;
+    
+}
+
+/* sectio 4 */
+
+
 
