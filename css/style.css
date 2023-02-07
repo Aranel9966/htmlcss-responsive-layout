@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 100%;
+}
 /* nav-bar */
 nav{
     width: 100%;
